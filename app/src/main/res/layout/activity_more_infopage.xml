@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MoreInfopage">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left_arrow"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="35dp"/>
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="48dp"
+            android:text="Por favor, inserte más información para
+seguir adelante"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="48dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_medium"/>
+
+        <EditText
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Número de registro"
+            android:layout_marginBottom="17dp"/>
+        <RelativeLayout
+            android:layout_width="331dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/addImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/addimage"
+            android:layout_marginEnd="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subir certificado de registro"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/addImg"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="331dp"
+            android:layout_height="42dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/addImg1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/addimage"
+                android:layout_marginEnd="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subir certificado de registro"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/addImg1"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            >
+
+            <EditText
+                android:id="@+id/txtEdit"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="11dp"
+                android:background="@null"
+                android:hint="Calificación" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/next"
+                android:layout_toRightOf="@id/txtEdit"
+                />
+
+            <TextView
+                android:layout_width="331dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtEdit"
+                android:background="@color/black"
+                android:textColor="@color/black" />
+
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            >
+
+            <EditText
+                android:id="@+id/txtEdit1"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="11dp"
+                android:background="@null"
+                android:hint="Especialización" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/next"
+                android:layout_toRightOf="@id/txtEdit1"
+                />
+            <TextView
+                android:layout_width="331dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtEdit1"
+                android:textColor="@color/black"
+                android:background="@color/black"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            >
+
+            <EditText
+                android:id="@+id/txtEdit2"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="11dp"
+                android:background="@null"
+                android:hint="Experiencia de servicio en años" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/next"
+                android:layout_toRightOf="@id/txtEdit2"
+                />
+            <TextView
+                android:layout_width="331dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtEdit2"
+                android:textColor="@color/black"
+                android:background="@color/black"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pfSubmitBtn"
+            android:layout_marginTop="113dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:outlineAmbientShadowColor="#EFB815"
+            android:outlineSpotShadowColor="#EFB815"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_marginBottom="46dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
